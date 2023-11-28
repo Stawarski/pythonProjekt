@@ -11,6 +11,9 @@ def belowAge(age):
 def equalAge(age):
     return lambda df: df[df['age'] == age]
 
+jobList = data['job'].unique()
+educList = data['education'].unique()
+
 def jobSort(job):
     return lambda df: df[df['job'] == job]
 
